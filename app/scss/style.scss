@@ -54,7 +54,6 @@ body {
 .footer {
   font-size: 16px;
   color: vars.$color-text-muted;
-  &__menu {}
   
   &__menu-list {
     display: flex;
@@ -64,8 +63,6 @@ body {
     border-bottom: 1px solid vars.$bg-primary;
     margin-bottom: 50px;
   }
-  
-  &__menu-item {}
   
   &__menu-link {
     border-bottom: 1px solid vars.$bg-primary;
@@ -78,31 +75,19 @@ body {
     margin-bottom: 45px;
   }
   
-  &__element {}
-  
   &__element-title {
     opacity: 0.5;
     margin-bottom: 20px;
   }
   
-  &__element-list {}
-  
   &__element-item {
     margin-bottom: 5px;
   }
-  
-  &__element-link {}
-  
-  &__address {}
   
   &__social-list {
     display: flex;
     gap: 10px;
   }
-
-  &__social-item {}
-  
-  &__social-link {}
   
   &__form {
     width: 250px;
@@ -140,8 +125,6 @@ body {
     justify-content: space-between;
     padding: 0 26px;
   }
-  
-  &__bottom-copy {}
   
   &__bottom-list {
     display: flex;
