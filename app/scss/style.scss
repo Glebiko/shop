@@ -50,3 +50,110 @@ body {
 .logo {
   display: inline-block;
 }
+
+.footer {
+  font-size: 16px;
+  color: vars.$color-text-muted;
+  &__menu {}
+  
+  &__menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 55px 0 44px;
+    border-bottom: 1px solid vars.$bg-primary;
+    margin-bottom: 50px;
+  }
+  
+  &__menu-item {}
+  
+  &__menu-link {
+    border-bottom: 1px solid vars.$bg-primary;
+  }
+  
+  &__elements {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 45px;
+  }
+  
+  &__element {}
+  
+  &__element-title {
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  
+  &__element-list {}
+  
+  &__element-item {
+    margin-bottom: 5px;
+  }
+  
+  &__element-link {}
+  
+  &__address {}
+  
+  &__social-list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__social-item {}
+  
+  &__social-link {}
+  
+  &__form {
+    width: 250px;
+    position: relative;
+  }
+  
+  &__form-input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid vars.$bg-primary;
+    color: vars.$color-text-muted;
+    padding: 1px 30px 5px 0;
+    &::placeholder {
+      color: vars.$color-text-muted;
+    }
+  }
+  
+  &__form-btn {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    @extend %border-reset;
+  }
+  
+  &__bottom {
+    background-color: vars.$bg-primary;
+    padding: 7px 0 9px;
+    font-size: 11px;
+    color: vars.$color-primary;
+  }
+  
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 26px;
+  }
+  
+  &__bottom-copy {}
+  
+  &__bottom-list {
+    display: flex;
+    gap: 0 37px;
+  }
+  
+  &__bottom-item + &__bottom-item {
+    position: relative;
+    &::before {
+      content: '|';
+      position: absolute;
+      left: -21px;
+    }
+  }
+}

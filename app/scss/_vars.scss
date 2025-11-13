@@ -1,7 +1,7 @@
 $color-accent: #3B2317;
 $color-primary: #513C27;
 $color-text-muted: #94897C;
-$color-bg: #E9E1D7;
+$bg-primary: #E9E1D7;
 
 %opensans-300 {
   font-family: 'OpenSans-Light', sans-serif;
@@ -31,4 +31,12 @@ $color-bg: #E9E1D7;
 %lora-500 {
   font-family: 'Lora-Medium', serif;
   font-weight: 300;
+}
+
+%border-reset {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
 }

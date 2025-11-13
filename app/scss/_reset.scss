@@ -45,14 +45,6 @@ select {
   font: inherit;
 }
 
-button {
-  appearance: none;
-  border: transparent;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-}
-
 @media (favors-reduced-motion: reduce) {
   *,
   * ::before,
