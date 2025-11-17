@@ -10,6 +10,23 @@ body {
   color: vars.$color-accent;
 }
 
+.title {
+  font-size: 45px;
+  text-transform: uppercase;
+  @extend %lora-400;
+}
+
+.sub-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  @extend %lora-400;
+}
+
+.text-title {
+  text-transform: uppercase;
+  @extend %lora-400;
+}
+
 .promo {
   padding: 7px 0 9px;
   background-color: vars.$bg-primary;
@@ -112,7 +129,6 @@ body {
     padding: 1px 30px 5px 0;
     &::placeholder {
       color: vars.$color-text-muted;
-      opacity: 1;
     }
   }
 
@@ -197,10 +213,6 @@ body {
 
   &__title {
     margin-bottom: 50px;
-    font-size: 45px;
-    text-transform: uppercase;
-    @extend %lora-400;
-    color: vars.$color-accent;
   }
 
   &__text {
@@ -259,30 +271,26 @@ body {
   &__img {
     max-width: 540px;
   }
-  
+
   &__box {
     padding: 40px 0;
   }
-  
+
   &__title {
     margin-bottom: 20px;
-    font-size: 45px;
-    text-transform: uppercase;
-    @extend %lora-400;
-    color: vars.$color-accent;
   }
-  
+
   &__text {
     margin-bottom: 30px;
     font-size: 30px;
     @extend %lora-400;
     color: vars.$color-primary;
   }
-  
+
   &__form {
     margin: 0;
   }
-  
+
   &__input {
     padding: 10px 0;
     margin-bottom: 10px;
@@ -294,10 +302,9 @@ body {
     color: vars.$color-text-muted;
     &::placeholder {
       color: vars.$color-text-muted;
-      opacity: 1;
     }
   }
-  
+
   &__btn {
     margin-bottom: 20px;
     margin-top: 30px;
@@ -310,10 +317,67 @@ body {
     border-radius: 3px;
     cursor: pointer;
   }
-  
+
   &__form-caption {
     font-size: 11px;
-    line-height: 1.3;
     color: vars.$color-primary;
   }
+}
+
+.designer {
+  padding: 150px 0 230px;
+
+  &__inner {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
   }
+
+  &__content {
+    max-width: 404px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: vars.$color-text-muted;
+    line-height: 1.4;
+  }
+
+  &__text + .designer__text {
+    margin-top: 25px;
+  }
+
+  &__box {
+    position: relative;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__caption {
+    position: absolute;
+    @extend %lora-400;
+    padding: 20px 15px;
+    color: vars.$color-primary;
+    border: 3px solid vars.$bg-primary;
+    top: 180px;
+    left: -160px;
+    width: 296px;
+    background-color: #fff;
+    text-align: start;
+  }
+
+  &__link {
+    padding: 10px 93px;
+    display: inline-block;
+    font-size: 16px;
+    color: vars.$color-text-muted;
+    border: 1px solid vars.$color-text-muted;
+  }
+}
