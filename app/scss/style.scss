@@ -14,6 +14,7 @@ body {
   font-size: 45px;
   text-transform: uppercase;
   @extend %lora-400;
+  margin-bottom: 50px;
 }
 
 .sub-title {
@@ -211,10 +212,6 @@ body {
     flex-direction: column;
   }
 
-  &__title {
-    margin-bottom: 50px;
-  }
-
   &__text {
     color: vars.$color-text-muted;
     padding-right: 13px;
@@ -381,3 +378,51 @@ body {
     border: 1px solid vars.$color-text-muted;
   }
 }
+
+.our-advantages {
+  background-color: vars.$bg-primary;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+  }
+
+  &__inner {
+    padding: 64px 130px 34px 0;
+    margin-left: auto;
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__title {}
+  
+  &__list {
+    column-count: 2;
+    column-gap: 80px;
+  }
+  
+  &__item {
+    padding-left: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 22px;
+      left: 0;
+      background-image: url(../images/list-decor.svg);
+    }
+  }
+  }
+  
