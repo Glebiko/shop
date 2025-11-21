@@ -197,7 +197,7 @@ body {
 }
 
 .new-collection {
-  background-image: url(../images/new-collection-dec.svg);
+  background-image: url('../images/new-collection-dec.svg');
   background-repeat: no-repeat;
   background-position: 0 -150px;
   &__inner {
@@ -313,6 +313,8 @@ body {
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
   }
 
   &__form-caption {
@@ -323,11 +325,19 @@ body {
 
 .designer {
   padding: 150px 0 230px;
+  position: relative;
 
   &__inner {
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
+  }
+
+  &__decor {
+    position: absolute;
+    top: -230px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__content {
@@ -403,8 +413,6 @@ body {
     bottom: 0;
     right: 0;
   }
-
-  &__title {}
   
   &__list {
     column-count: 2;
@@ -421,8 +429,72 @@ body {
       width: 30px;
       height: 22px;
       left: 0;
-      background-image: url(../images/list-decor.svg);
+      background-image: url('../images/list-decor.svg');
     }
   }
   }
   
+  .our-blog {
+    padding: 150px 0 0;
+    &__inner {
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: 1fr 280px 330px;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      background-image: url('../images/our-blog-decor.svg');
+      background-repeat: no-repeat;
+      background-position: bottom left;
+    }
+    
+    &__content {}
+    
+    &__title {}
+    
+    &__text {
+      max-width: 400px;
+      margin-bottom: 50px;
+      color: vars.$color-text-muted;
+      font-size: 16px;
+    }
+    
+    &__btn-link {
+      font-size: 16px;
+      display: inline-block;
+      padding: 10px 93px;
+      border: 1px solid vars.$bg-primary;
+      color: vars.$color-text-muted;
+    }
+
+    &__box {}
+    
+    &__box-img {
+      margin-bottom: 20px;
+    }
+    
+    
+    &__box-right {
+      grid-row: span 2;
+      align-self: center;
+    }
+
+    &__link {
+      display: inline-block;
+      margin-bottom: 5px;
+      @extend %lora-400;
+      color: vars.$color-text-muted;
+    }
+    
+    &__box-date {
+      display: block;
+      color: vars.$color-primary;
+      font-size: 16px;
+      @extend %opensans-300;
+    }
+    
+    &__box-bottom {
+      grid-column: span 2;
+      margin-left: auto;
+    }
+  }
+    
