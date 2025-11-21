@@ -448,10 +448,6 @@ body {
       background-position: bottom left;
     }
     
-    &__content {}
-    
-    &__title {}
-    
     &__text {
       max-width: 400px;
       margin-bottom: 50px;
@@ -466,8 +462,6 @@ body {
       border: 1px solid vars.$bg-primary;
       color: vars.$color-text-muted;
     }
-
-    &__box {}
     
     &__box-img {
       margin-bottom: 20px;
