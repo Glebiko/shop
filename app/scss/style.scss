@@ -338,6 +338,7 @@ body {
     top: -230px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 5;
   }
 
   &__content {
