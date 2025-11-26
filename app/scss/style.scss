@@ -414,12 +414,12 @@ body {
     bottom: 0;
     right: 0;
   }
-  
+
   &__list {
     column-count: 2;
     column-gap: 80px;
   }
-  
+
   &__item {
     padding-left: 50px;
     margin-bottom: 30px;
@@ -433,63 +433,121 @@ body {
       background-image: url('../images/list-decor.svg');
     }
   }
-  }
-  
-  .our-blog {
-    padding: 150px 0 0;
-    &__inner {
-      padding: 0 40px;
-      display: grid;
-      grid-template-columns: 1fr 280px 330px;
-      grid-template-rows: 1fr 1fr;
-      gap: 20px;
-      background-image: url('../images/our-blog-decor.svg');
-      background-repeat: no-repeat;
-      background-position: bottom left;
-    }
-    
-    &__text {
-      max-width: 400px;
-      margin-bottom: 50px;
-      color: vars.$color-text-muted;
-      font-size: 16px;
-    }
-    
-    &__btn-link {
-      font-size: 16px;
-      display: inline-block;
-      padding: 10px 93px;
-      border: 1px solid vars.$bg-primary;
-      color: vars.$color-text-muted;
-    }
-    
-    &__box-img {
-      margin-bottom: 20px;
-    }
-    
-    
-    &__box-right {
-      grid-row: span 2;
-      align-self: center;
-    }
+}
 
-    &__link {
-      display: inline-block;
-      margin-bottom: 5px;
-      @extend %lora-400;
-      color: vars.$color-text-muted;
-    }
-    
-    &__box-date {
-      display: block;
-      color: vars.$color-primary;
-      font-size: 16px;
-      @extend %opensans-300;
-    }
-    
-    &__box-bottom {
-      grid-column: span 2;
-      margin-left: auto;
+.our-blog {
+  padding: 150px 0 0;
+  &__inner {
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 280px 330px;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    background-image: url('../images/our-blog-decor.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  &__text {
+    max-width: 400px;
+    margin-bottom: 50px;
+    color: vars.$color-text-muted;
+    font-size: 16px;
+  }
+
+  &__btn-link {
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 93px;
+    border: 1px solid vars.$bg-primary;
+    color: vars.$color-text-muted;
+  }
+
+  &__box-img {
+    margin-bottom: 20px;
+  }
+
+  &__box-right {
+    grid-row: span 2;
+    align-self: center;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 5px;
+    @extend %lora-400;
+    color: vars.$color-text-muted;
+  }
+
+  &__box-date {
+    display: block;
+    color: vars.$color-primary;
+    font-size: 16px;
+    @extend %opensans-300;
+  }
+
+  &__box-bottom {
+    grid-column: span 2;
+    margin-left: auto;
+  }
+}
+
+.appointment {
+  padding: 50px 0 130px;
+  background-image: url(../images/appointment-decor.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 120px;
+  &__title {
+    text-align: center;
+    margin-bottom: 77px;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  &__form {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-title {
+    margin-bottom: 80px;
+  }
+
+  &__form-text {
+    margin-bottom: 30px;
+    @extend %opensans-700;
+    color: vars.$color-text-muted;
+  }
+
+  &__form-input {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid vars.$color-text-muted;
+    color: vars.$color-text-muted;
+    background-color: transparent;
+    &::placeholder {
+    color: vars.$color-text-muted;
     }
   }
-    
+
+  &__form-btn {
+    margin-top: auto;
+    padding: 12px;
+    color: #fff;
+    background-color: vars.$color-accent;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+.container {
+}
