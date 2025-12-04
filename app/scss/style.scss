@@ -4,7 +4,6 @@
 @use '../../node_modules/swiper/swiper-bundle.css';
 @use 'global';
 
-
 .promo {
   padding: 7px 0 9px;
   background-color: $bg-primary;
@@ -19,7 +18,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $color-primary;
-  
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -874,9 +873,6 @@
     position: relative;
   }
 
-  &__slider-wrapper {
-  }
-
   &__slide {
     text-align: center;
   }
@@ -906,5 +902,75 @@
   }
   &__arrow-next {
     right: 0;
+  }
+}
+
+.page-404 {
+  &__container {
+    max-width: 1560px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  
+  &__inner {
+    display: flex;
+  }
+  
+  &__content {
+    margin: 240px 14px 60px 35px;
+    @extend %lora-400;
+    width: 741px;
+  }
+
+  &__inner-imgbig {
+    align-self: flex-end;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    font-size: 160px;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    font-size: 48px;
+    text-transform: uppercase;
+    span {
+      width: 620px;
+    }
+  }
+}
+.moving {
+  opacity: 0.2;
+  overflow: hidden;
+  &__text {
+    display: flex;
+    gap: 28px;
+    @extend %lora-400;
+    font-size: 160px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    align-items: center;
+    animation: moving 20s linear infinite;
+  }
+
+  &__decor {
+    width: 154px;
+    height: 115px;
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
   }
 }
