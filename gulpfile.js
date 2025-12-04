@@ -13,6 +13,7 @@ const newer = require('gulp-newer');
 const ttf2woff2 = require('gulp-ttf2woff2');
 const include = require('gulp-include');
 const svgstore = require('gulp-svgstore');
+const plumber = require('gulp-plumber');
 
 function sprites() {
   return src('app/images/sprite/*.svg')
@@ -55,11 +56,14 @@ function images() {
 
 function styles() {
   return src('app/scss/*.scss')
+
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions']
     }))
+    .pipe(plumber())
     .pipe(scss({ style: 'compressed' }))
     .pipe(concat('style.min.css'))
+    .pipe(plumber.stop())
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
 }

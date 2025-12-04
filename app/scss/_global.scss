@@ -1,6 +1,35 @@
+@use 'vars'as *;
+
+
 html,
 body {
   height: 100%;
+}
+
+body {
+  @extend %opensans-400;
+  font-size: 20px;
+  line-height: 1.3;
+  color: $color-accent;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 45px;
+  text-transform: uppercase;
+  @extend %lora-400;
+  margin-bottom: 50px;
+}
+
+.sub-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  @extend %lora-400;
+}
+
+.text-title {
+  text-transform: uppercase;
+  @extend %lora-400;
 }
 
 .wrapper {
@@ -17,4 +46,16 @@ body {
   max-width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
