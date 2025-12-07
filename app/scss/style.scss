@@ -1264,12 +1264,6 @@
     width: calc(100vw - (100vw - 1500px) / 2);
   }
 
-  &__slider-wrapper {
-  }
-
-  &__slide {
-  }
-
   &__slider-nav {
     position: absolute;
     max-width: 1520px;
@@ -1354,9 +1348,6 @@
     display: flex;
     gap: 10px;
     align-items: center;
-  }
-
-  &__item-avatar-img {
   }
 }
 .reviews-box {
