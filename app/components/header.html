@@ -1,20 +1,25 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
+          <button class="header__btn" type="menu" aria-label="open menu button">
+            <svg width="30" height="18">
+              <use xlink:href="images/sprite.svg#mobile-btn"></use>
+            </svg>
+          </button>
           <div class="header__logo">
             <a class="logo" href="#">
               <img class="logo__img" src="images/logo.svg" alt="logo of Luxurious Bridal Haven" loading="lazy">
             </a>
           </div>
-          <ul class="header__lang">
-            <li class="header__lang-item header__lang-item--active">
-              <a class="header__lang-link" href="#">en</a>/
-            </li>
-            <li class="header__lang-item">
-              <a class="header__lang-link" href="#">ua</a>
-            </li>
-          </ul>
-          <nav class="menu">
+          <nav class="header__menu menu">
+            <ul class="header__menu-lang header__lang">
+              <li class="header__lang-item header__lang-item--active">
+                <a class="header__lang-link" href="#">en</a>/
+              </li>
+              <li class="header__lang-item">
+                <a class="header__lang-link" href="#">ua</a>
+              </li>
+            </ul>
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="#" class="menu__item-link">catalog</a>

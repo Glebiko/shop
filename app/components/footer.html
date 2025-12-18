@@ -12,7 +12,7 @@
         <li class="footer__menu-item">
           <a class="footer__menu-link" href="#">About</a>
         </li>
-        <li class="footer__menu-item">
+        <li class="footer__menu-item footer__menu-item--logo">
           <a class="logo" href="#">
             <img class="logo__img" src="images/logo.svg" alt="logo of Luxurious Bridal Haven" loading="lazy">
           </a>
@@ -63,7 +63,7 @@
           st. Arsenalna, 5
         </address>
       </div>
-      <div class="footer__element">
+      <div class="footer__element footer__element--social">
         <h3 class="footer__element-title">Social</h3>
         <ul class="footer__social-list">
           <li class="footer__social-item">
@@ -89,9 +89,8 @@
           Sign-up for our newsletter
         </h3>
         <form class="footer__form" action="">
-          <label aria-label="enter your email">
-            <input class="footer__form-input" type="email" placeholder="Enter your email">
-          </label>
+          <label class="sr-only" for="footer-email">enter your email</label>
+            <input class="footer__form-input" id="footer-email" name="footer-email" type="email" placeholder="Enter your email">
           <button class="footer__form-btn" type="submit" aria-label="submit email">
             <svg width="15" height="11">
               <use xlink:href="images/sprite.svg#envelop"></use>

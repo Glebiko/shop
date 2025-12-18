@@ -15,11 +15,15 @@
               <span class="appointment__form-text">
                 Fill in your contact details
               </span>
-              <input class="appointment__form-input" type="text" placeholder="First name">
-              <input class="appointment__form-input" type="text" placeholder="Last name">
-              <input class="appointment__form-input" type="email" placeholder="Email">
-              <input class="appointment__form-input" type="#" placeholder="Mobile">
-              <button class="appointment__form-btn">send</button>
+              <label class="sr-only" for="appointment-first-name">enter first name</label>
+              <input class="appointment__form-input" id="appointment-first-name" name="appointment-first-name" type="text" placeholder="First name">
+              <label class="sr-only" for="appointment-last-name">enter last name</label>
+              <input class="appointment__form-input" id="appointment-last-name" name="appointment-last-name" type="text" placeholder="Last name">
+              <label class="sr-only" for="appointment-email">enter your email</label>
+              <input class="appointment__form-input" id="appointment-email" name="appointment-email" type="email" placeholder="Email">
+              <label class="sr-only" for="appointment-phone">enter your phone number</label>
+              <input class="appointment__form-input" id="appointment-phone" name="appointment-phone" type="tel" placeholder="Mobile">
+              <button class="appointment__form-btn" type="button">send</button>
             </form>
             <picture>
              <source srcset="images/appointment.avif" type="image/avif">
