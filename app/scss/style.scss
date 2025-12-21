@@ -404,6 +404,7 @@
   &__inner {
     padding: 64px 130px 34px 0;
     margin-left: auto;
+    z-index: 1;
   }
 
   &__decor {
@@ -567,6 +568,7 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     color: $color-text-muted;
     font-size: 16px;
@@ -574,12 +576,14 @@
 
   &__item {
     position: relative;
-  }
-
-  &__item + .breadcrumbs__item::before {
-    content: '/';
-    position: absolute;
-    left: -11px;
+    &::after {
+      content: '/';
+      position: absolute;
+      right: -11px;
+    }
+    &:last-child::after {
+      content: none;
+    }
   }
 }
 
@@ -603,26 +607,61 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "aa ab ba bb"
+    "cc cc ca cb"
+    "cc cc da db"
+    "ea eb ee ee"
+    "fa fb ee ee";
     gap: 40px;
   }
 
   &__item {
     position: relative;
+    &:nth-child(1) {
+      grid-area: aa;
+    }
+    &:nth-child(2) {
+      grid-area: ab;
+    }
+    &:nth-child(3) {
+      grid-area: ba;
+    }
+    &:nth-child(4) {
+      grid-area: bb;
+    }
     &:nth-child(5) {
-      grid-column: span 2;
-      grid-row: span 2;
+      grid-area: cc;
       height: fit-content;
     }
-    &:nth-child(10),
-    &:nth-child(11) {
+    &:nth-child(6) {
+      grid-area: ca;
+    }
+    &:nth-child(7) {
+      grid-area: cb;
+    }
+    &:nth-child(8) {
+      grid-area: da;
+    }
+    &:nth-child(9) {
+      grid-area: db;
+    }
+    &:nth-child(10) {
+      grid-area: ea;
       margin-top: -130px;
-      height: fit-content;
+    }
+    &:nth-child(11) {
+      grid-area: eb;
+      margin-top: -130px;
     }
     &:nth-child(12) {
-      grid-column: span 2;
-      grid-row: span 2;
+      grid-area: ee;
       height: fit-content;
+    }
+    &:nth-child(13) {
+      grid-area: fa;
+    }
+    &:nth-child(14) {
+      grid-area: fb;
     }
   }
 
@@ -711,6 +750,10 @@
     img {
       max-width: max-content;
     }
+  }
+
+  &__arrow {
+    display: none;
   }
 
   &__content {
@@ -943,7 +986,7 @@
   }
 
   &__inner-imgbig {
-    align-self: flex-end;
+    align-self: flex-start;
   }
 
   &__title {
@@ -1007,6 +1050,13 @@
     gap: 40px;
   }
 
+  &__img {
+    width: clamp(300px, 60vw, 740px);
+    img {
+      height: auto;
+    }
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -1022,15 +1072,15 @@
     a {
       font-weight: 400;
       @extend %lora-400;
-      font-size: 48px;
+      font-size: clamp(24px, 3vw, 48px);
       line-height: 1.2;
       text-transform: uppercase;
     }
   }
 
   &__text {
-    padding-right: 80px;
-    font-size: 24px;
+    padding-right: clamp(10px, 5vw, 80px);
+    font-size: clamp(16px, 1.5vw, 24px);
     line-height: 1.3;
     margin-bottom: auto;
     opacity: 0.4;
@@ -1056,7 +1106,7 @@
   &__nav-title {
     margin-right: auto;
     @extend %lora-400;
-    font-size: 32px;
+    font-size: clamp(20px, 3.5vw, 32px);
   }
 
   &__search-form {
@@ -1175,7 +1225,7 @@
     h1 {
       @extend %lora-400;
       font-weight: 400;
-      font-size: 96px;
+      font-size: clamp(24px, 6vw, 96px);
       line-height: 1.2;
       text-transform: uppercase;
     }
@@ -1183,7 +1233,7 @@
     h2 {
       margin-bottom: 40px;
       @extend %lora-500;
-      font-size: 40px;
+      font-size: clamp(24px, 5.2vw, 40px);
     }
 
     b {
@@ -1192,12 +1242,13 @@
       max-width: 1220px;
       @extend %lora-400;
       font-weight: 400;
-      font-size: 32px;
+      font-size: clamp(20px, 3.7vw, 32px);
     }
 
     & > p {
       margin-bottom: 40px;
       max-width: 1220px;
+      font-size: clamp(16px, 2.8vw, 20px);
     }
 
     li:has(ul) {
@@ -1234,6 +1285,7 @@
     opacity: 0.3;
     border-right: 1px solid $color-accent;
     position: relative;
+    font-size: clamp(16px, 2.8vw, 20px);
   }
 
   &__stats-list {
@@ -1241,6 +1293,7 @@
     align-items: center;
     gap: 16px;
     opacity: 0.3;
+    font-size: clamp(16px, 2.8vw, 20px);
   }
 
   &__stats-link {
@@ -1257,12 +1310,12 @@
   align-items: center;
   &-title {
     @extend %lora-400;
-    font-size: 64px;
+    font-size: clamp(24px, 4.5vw, 64px);
     line-height: 1.2;
   }
 
   &-link {
-    font-size: 24px;
+    font-size: clamp(11px, 2vw, 24px);
     border-bottom: 1px solid $color-accent;
     color: rgba($color: $color-accent, $alpha: 0.4);
   }
@@ -1557,6 +1610,12 @@
     cursor: pointer;
   }
 }
+
+.catalog-popup {
+  display: none;
+  cursor: pointer;
+}
+
 .catalog-sort {
   &__wrapper {
     position: relative;
@@ -1693,7 +1752,7 @@
 
   &__title {
     @extend %lora-400;
-    font-size: 64px;
+    font-size: clamp(24px, 6.5vw, 64px);
   }
 
   &__content {
@@ -1879,6 +1938,7 @@
     border: none;
     padding: 0;
     background-color: transparent;
+    cursor: pointer;
   }
 
   &__item {
@@ -1981,5 +2041,91 @@
     @extend %inter-400;
     text-align: center;
     display: block;
+  }
+}
+
+.close-popup {
+  display: none;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba($color: $color-text-muted, $alpha: 0.8);
+  &[aria-hidden="false"]{
+    display: flex;
+  }
+
+  &__overlay{
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+  }
+
+  &__content {
+    max-width: 616px;
+    width: 100%;
+    height: 90vh;
+    overflow: auto;
+    background-color: #fff;
+    position: relative;
+    z-index: 101;
+  }
+
+  .order {
+    padding: 40px 10px 74px;
+    border: none;
+    &__links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      font-size: 20px;
+    }
+
+    &__link-shop {
+      padding: 13px;
+      border: 1px solid $color-text-muted;
+      border-radius: 3px;
+      color: $color-text-muted;
+      text-align: center;
+    }
+
+    &__link-now {
+      padding: 13px;
+      color: #F6F4F0;
+      border-radius: 3px;
+      background-color: $color-accent;
+      text-align: center;
+    }
+  }
+
+  .order__list {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  .order__list-box {
+    text-transform: none;
+    opacity: 1;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    &:nth-child(2) {
+      dd {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .checkout__item-list {
+    margin: 0;
+  }
+  
+  .box-total {
+    @extend %opensans-700;
+    text-transform: uppercase;
   }
 }

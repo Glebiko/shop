@@ -25,6 +25,9 @@
                 </li>
               </ul>
             </div>
+            <button class="catalog-popup" type="button">
+              Filter
+            </button>
             <h2 class="title catalog__title">
               wedding dresses
             </h2>
@@ -45,206 +48,216 @@
           </div>
           <div class="catalog__content">
             <h2 class="sr-only"></h2>
-            <aside class="catalog__filter">
-              <form class="catalog__filter-form">
-                <div class="catalog__filterbox">
-                  <h3 class="text-title catalog__filterbox-title">
-                    price
-                  </h3>
-                  <div class="catalog__filterbox-slider">
-                    <div class="catalog__filterbox-range range">
-                      <div class="range__inputs">
-                        <label class="range__label" for="range-min-value">
-                          <input class="range__min" id="tange-min-value" name="range-min-value" type="number" min="300" max="3000" step="100">
+            <div class="popup" aria-hidden="true">
+              <div class="popup__overlay"></div>
+              <div class="popup__content" aria-modal="true" role="dialog">
+                <aside class="catalog__filter">
+                  <button class="checkout__details-del close-popup" aria-label="close popup window">
+                    <svg width="40" height="40">
+                      <use xlink:href="images/sprite.svg#checkout-del"></use>
+                    </svg>
+                  </button>
+                  <form class="catalog__filter-form">
+                    <div class="catalog__filterbox">
+                      <h3 class="text-title catalog__filterbox-title">
+                        price
+                      </h3>
+                      <div class="catalog__filterbox-slider">
+                        <div class="catalog__filterbox-range range">
+                          <div class="range__inputs">
+                            <label class="range__label" for="range-min-value">
+                              <input class="range__min" id="tange-min-value" name="range-min-value" type="number" min="300" max="3000" step="100">
+                            </label>
+                            -
+                            <label class="range__label" for="range-max-value">
+                              <input class="range__max" id="range-max-value" name="range-max-value" type="number" min="300" max="3000" step="100">
+                            </label>
+                          </div>
+                          <div class="range__slider"></div>
+                          <ul class="range__list">
+                            <li class="range__item">300</li>
+                            <li class="range__item">1,000</li>
+                            <li class="range__item">1,500</li>
+                            <li class="range__item">2,000</li>
+                            <li class="range__item">2,500</li>
+                            <li class="range__item">3,000</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__filterbox">
+                      <h3 class="text-title catalog__filterbox-title">
+                        size
+                      </h3>
+                      <div class="catalog__filterbox-items">
+                        <label class="checkbox-label" for="catalog-size-xs">
+                          <input class="check-box" id="catalog-size-xs" name="catalog-size-xs" type="checkbox">
+                          <span class="check-style"></span>
+                          xs
                         </label>
-                        -
-                        <label class="range__label" for="range-max-value">
-                          <input class="range__max" id="range-max-value" name="range-max-value" type="number" min="300" max="3000" step="100">
+                        <label class="checkbox-label" for="catalog-size-s">
+                          <input class="check-box" id="catalog-size-s" name="catalog-size-s" type="checkbox">
+                          <span class="check-style"></span>
+                          s
+                        </label>
+                        <label class="checkbox-label" for="catalog-size-m">
+                          <input class="check-box" id="catalog-size-m" name="catalog-size-m" type="checkbox">
+                          <span class="check-style"></span>
+                          m
+                        </label>
+                        <label class="checkbox-label" for="catalog-size-l">
+                          <input class="check-box" id="catalog-size-l" name="catalog-size-l" type="checkbox">
+                          <span class="check-style"></span>
+                          l
+                        </label>
+                        <label class="checkbox-label" for="catalog-size-xl">
+                          <input class="check-box" id="catalog-size-xl" name="catalog-size-xl" type="checkbox">
+                          <span class="check-style"></span>
+                          xl
+                        </label>
+                        <label class="checkbox-label" for="catalog-size-xxl">
+                          <input class="check-box" id="catalog-size-xxl" name="catalog-size-xxl" type="checkbox">
+                          <span class="check-style"></span>
+                          xxl
                         </label>
                       </div>
-                      <div class="range__slider"></div>
-                      <ul class="range__list">
-                        <li class="range__item">300</li>
-                        <li class="range__item">1,000</li>
-                        <li class="range__item">1,500</li>
-                        <li class="range__item">2,000</li>
-                        <li class="range__item">2,500</li>
-                        <li class="range__item">3,000</li>
-                      </ul>
                     </div>
-                  </div>
-                </div>
-                <div class="catalog__filterbox">
-                  <h3 class="text-title catalog__filterbox-title">
-                    size
-                  </h3>
-                  <div class="catalog__filterbox-items">
-                    <label class="checkbox-label" for="catalog-size-xs">
-                      <input class="check-box" id="catalog-size-xs" name="catalog-size-xs" type="checkbox">
-                      <span class="check-style"></span>
-                      xs
-                    </label>
-                    <label class="checkbox-label" for="catalog-size-s">
-                      <input class="check-box" id="catalog-size-s" name="catalog-size-s" type="checkbox">
-                      <span class="check-style"></span>
-                      s
-                    </label>
-                    <label class="checkbox-label" for="catalog-size-m">
-                      <input class="check-box" id="catalog-size-m" name="catalog-size-m" type="checkbox">
-                      <span class="check-style"></span>
-                      m
-                    </label>
-                    <label class="checkbox-label" for="catalog-size-l">
-                      <input class="check-box" id="catalog-size-l" name="catalog-size-l" type="checkbox">
-                      <span class="check-style"></span>
-                      l
-                    </label>
-                    <label class="checkbox-label" for="catalog-size-xl">
-                      <input class="check-box" id="catalog-size-xl" name="catalog-size-xl" type="checkbox">
-                      <span class="check-style"></span>
-                      xl
-                    </label>
-                    <label class="checkbox-label" for="catalog-size-xxl">
-                      <input class="check-box" id="catalog-size-xxl" name="catalog-size-xxl" type="checkbox">
-                      <span class="check-style"></span>
-                      xxl
-                    </label>
-                  </div>
-                </div>
-                <div class="catalog__filterbox">
-                  <h3 class="text-title catalog__filterbox-title">
-                    color
-                  </h3>
-                  <div class="catalog__filterbox-items">
-                    <label class="radio-label">
-                      <input class="radio-box" type="radio">
-                      <span class="radio-style"></span>
-                      white
-                    </label>
-                    <label class="radio-label">
-                      <input class="radio-box" type="radio">
-                      <span class="radio-style"></span>
-                      ivory
-                    </label>
-                  </div>
-                </div>
-                <div class="catalog__filterbox">
-                  <h3 class="text-title catalog__filterbox-title">
-                    material
-                  </h3>
-                  <div class="catalog__filterbox-items">
-                    <label class="checkbox-label" for="catalog-lace">
-                      <input class="check-box" id="catalog-lace" name="catalog-lace" type="checkbox">
-                      <span class="check-style"></span>
-                      lace
-                    </label>
-                    <label class="checkbox-label" for="catalog-silk">
-                      <input class="check-box" id="catalog-silk" name="catalog-silk" type="checkbox">
-                      <span class="check-style"></span>
-                      silk
-                    </label>
-                    <label class="checkbox-label" for="catalog-crepe">
-                      <input class="check-box" id="catalog-crepe" name="catalog-crepe" type="checkbox">
-                      <span class="check-style"></span>
-                      crepe
-                    </label>
-                    <label class="checkbox-label" for="catalog-satin">
-                      <input class="check-box" id="catalog-satin" name="catalog-satin" type="checkbox">
-                      <span class="check-style"></span>
-                      satin
-                    </label>
-                    <label class="checkbox-label" for="catalog-embroidery">
-                      <input class="check-box" id="catalog-embroidery" name="catalog-embroidery" type="checkbox">
-                      <span class="check-style"></span>
-                      embroidery
-                    </label>
-                    <label class="checkbox-label" for="catalog-eco">
-                      <input class="check-box" id="catalog-eco" name="catalog-eco" type="checkbox">
-                      <span class="check-style"></span>
-                      eco
-                    </label>
-                  </div>
-                </div>
-                <div class="catalog__filterbox">
-                  <h3 class="text-title catalog__filterbox-title">
-                    style
-                  </h3>
-                  <div class="catalog__filterbox-line">
-                    <label class="checkbox-label" for="catalog-style-all">
-                      <input class="check-box" id="catalog-style-all" name="catalog-style-all" type="checkbox">
-                      <span class="check-style"></span>
-                      all
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-boho">
-                      <input class="check-box" id="catalog-style-boho" name="catalog-style-boho" type="checkbox">
-                      <span class="check-style"></span>
-                      boho
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-romantic">
-                      <input class="check-box" id="catalog-style-romantic" name="catalog-style-romantic" type="checkbox">
-                      <span class="check-style"></span>
-                      romantic
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-elegant">
-                      <input class="check-box" id="catalog-style-elegant" name="catalog-style-elegant" type="checkbox">
-                      <span class="check-style"></span>
-                      elegant
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-vintage">
-                      <input class="check-box" id="catalog-style-vintage" name="catalog-style-vintage" type="checkbox">
-                      <span class="check-style"></span>
-                      vintage
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-vintage">
-                      <input class="check-box" id="catalog-style-vintage" name="catalog-style-vintage" type="checkbox">
-                      <span class="check-style"></span>
-                      simple
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-modern">
-                      <input class="check-box" id="catalog-style-modern" name="catalog-style-modern" type="checkbox">
-                      <span class="check-style"></span>
-                      modern
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-formal">
-                      <input class="check-box" id="catalog-style-formal" name="catalog-style-formal" type="checkbox">
-                      <span class="check-style"></span>
-                      formal
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-princess">
-                      <input class="check-box" id="catalog-style-princess" name="catalog-style-princess" type="checkbox">
-                      <span class="check-style"></span>
-                      princess
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-glamorous">
-                      <input class="check-box" id="catalog-style-glamorous" name="catalog-style-glamorous" type="checkbox">
-                      <span class="check-style"></span>
-                      glamorous
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-modest">
-                      <input class="check-box" id="catalog-style-modest" name="catalog-style-modest" type="checkbox">
-                      <span class="check-style"></span>
-                      modest
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-casual">
-                      <input class="check-box" id="catalog-style-casual" name="catalog-style-casual" type="checkbox">
-                      <span class="check-style"></span>
-                      casual
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-modern">
-                      <input class="check-box" id="catalog-style-modern" name="catalog-style-modern" type="checkbox">
-                      <span class="check-style"></span>
-                      beach
-                    </label>
-                    <label class="checkbox-label" for="catalog-style-elopement">
-                      <input class="check-box" id="catalog-style-elopement" name="catalog-style-elopement" type="checkbox">
-                      <span class="check-style"></span>
-                      elopement
-                    </label>
-                  </div>
-                </div>
-                <button class="catalog__filter-clean" type="button">clean all</button>
-              </form>
-            </aside>
+                    <div class="catalog__filterbox">
+                      <h3 class="text-title catalog__filterbox-title">
+                        color
+                      </h3>
+                      <div class="catalog__filterbox-items">
+                        <label class="radio-label">
+                          <input class="radio-box" type="radio">
+                          <span class="radio-style"></span>
+                          white
+                        </label>
+                        <label class="radio-label">
+                          <input class="radio-box" type="radio">
+                          <span class="radio-style"></span>
+                          ivory
+                        </label>
+                      </div>
+                    </div>
+                    <div class="catalog__filterbox">
+                      <h3 class="text-title catalog__filterbox-title">
+                        material
+                      </h3>
+                      <div class="catalog__filterbox-items">
+                        <label class="checkbox-label" for="catalog-lace">
+                          <input class="check-box" id="catalog-lace" name="catalog-lace" type="checkbox">
+                          <span class="check-style"></span>
+                          lace
+                        </label>
+                        <label class="checkbox-label" for="catalog-silk">
+                          <input class="check-box" id="catalog-silk" name="catalog-silk" type="checkbox">
+                          <span class="check-style"></span>
+                          silk
+                        </label>
+                        <label class="checkbox-label" for="catalog-crepe">
+                          <input class="check-box" id="catalog-crepe" name="catalog-crepe" type="checkbox">
+                          <span class="check-style"></span>
+                          crepe
+                        </label>
+                        <label class="checkbox-label" for="catalog-satin">
+                          <input class="check-box" id="catalog-satin" name="catalog-satin" type="checkbox">
+                          <span class="check-style"></span>
+                          satin
+                        </label>
+                        <label class="checkbox-label" for="catalog-embroidery">
+                          <input class="check-box" id="catalog-embroidery" name="catalog-embroidery" type="checkbox">
+                          <span class="check-style"></span>
+                          embroidery
+                        </label>
+                        <label class="checkbox-label" for="catalog-eco">
+                          <input class="check-box" id="catalog-eco" name="catalog-eco" type="checkbox">
+                          <span class="check-style"></span>
+                          eco
+                        </label>
+                      </div>
+                    </div>
+                    <div class="catalog__filterbox">
+                      <h3 class="text-title catalog__filterbox-title">
+                        style
+                      </h3>
+                      <div class="catalog__filterbox-line">
+                        <label class="checkbox-label" for="catalog-style-all">
+                          <input class="check-box" id="catalog-style-all" name="catalog-style-all" type="checkbox">
+                          <span class="check-style"></span>
+                          all
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-boho">
+                          <input class="check-box" id="catalog-style-boho" name="catalog-style-boho" type="checkbox">
+                          <span class="check-style"></span>
+                          boho
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-romantic">
+                          <input class="check-box" id="catalog-style-romantic" name="catalog-style-romantic" type="checkbox">
+                          <span class="check-style"></span>
+                          romantic
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-elegant">
+                          <input class="check-box" id="catalog-style-elegant" name="catalog-style-elegant" type="checkbox">
+                          <span class="check-style"></span>
+                          elegant
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-vintage">
+                          <input class="check-box" id="catalog-style-vintage" name="catalog-style-vintage" type="checkbox">
+                          <span class="check-style"></span>
+                          vintage
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-vintage">
+                          <input class="check-box" id="catalog-style-vintage" name="catalog-style-vintage" type="checkbox">
+                          <span class="check-style"></span>
+                          simple
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-modern">
+                          <input class="check-box" id="catalog-style-modern" name="catalog-style-modern" type="checkbox">
+                          <span class="check-style"></span>
+                          modern
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-formal">
+                          <input class="check-box" id="catalog-style-formal" name="catalog-style-formal" type="checkbox">
+                          <span class="check-style"></span>
+                          formal
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-princess">
+                          <input class="check-box" id="catalog-style-princess" name="catalog-style-princess" type="checkbox">
+                          <span class="check-style"></span>
+                          princess
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-glamorous">
+                          <input class="check-box" id="catalog-style-glamorous" name="catalog-style-glamorous" type="checkbox">
+                          <span class="check-style"></span>
+                          glamorous
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-modest">
+                          <input class="check-box" id="catalog-style-modest" name="catalog-style-modest" type="checkbox">
+                          <span class="check-style"></span>
+                          modest
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-casual">
+                          <input class="check-box" id="catalog-style-casual" name="catalog-style-casual" type="checkbox">
+                          <span class="check-style"></span>
+                          casual
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-modern">
+                          <input class="check-box" id="catalog-style-modern" name="catalog-style-modern" type="checkbox">
+                          <span class="check-style"></span>
+                          beach
+                        </label>
+                        <label class="checkbox-label" for="catalog-style-elopement">
+                          <input class="check-box" id="catalog-style-elopement" name="catalog-style-elopement" type="checkbox">
+                          <span class="check-style"></span>
+                          elopement
+                        </label>
+                      </div>
+                    </div>
+                    <button class="catalog__filter-clean" type="button">clean all</button>
+                  </form>
+                </aside>
+              </div>
+            </div>
             <div class="catalog__content-box">
               <div class="catalog__content-items view-mode__container view-mode__container--grid">
                 <div class="catalog__content-item catalog__item">

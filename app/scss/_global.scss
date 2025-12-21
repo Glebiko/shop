@@ -12,6 +12,9 @@ body {
   line-height: 1.3;
   color: $color-accent;
   background-color: #fff;
+  &.scroll-lock {
+    overflow: hidden;
+  }
 }
 
 .title {
@@ -36,6 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  overflow: hidden;
 }
 
 .main {
