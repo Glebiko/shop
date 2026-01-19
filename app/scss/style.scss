@@ -29,11 +29,24 @@
   }
 
   &__btn {
+    padding: 0;
+    width: 30px;
+    height: 18px;
+    transition-duration: 1s;
     display: none;
     cursor: pointer;
     border: none;
-    padding: 0;
     background-color: transparent;
+  }
+
+  &__btn span {
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: $color-primary;
+    position: absolute;
+    transition-duration: 0.25s;
+    transition-delay: 0.25s;
   }
 
   &__logo {
