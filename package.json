@@ -16,6 +16,7 @@
     "gulp-avif": "^1.1.1",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-include": "^2.4.1",
     "gulp-newer": "^1.4.0",
@@ -24,6 +25,7 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
+    "nouislider": "^15.8.1",
     "sass": "^1.86.3"
   },
   "dependencies": {
