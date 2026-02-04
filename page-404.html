@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxurious Bridal Haven</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+<div class="promo">
+  <div class="container">
+    <p class="promo-text">
+      save 10% off when you <a href="#">sign up</a>
+    </p>
+  </div>
+</div>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__btn" type="menu" aria-label="open menu button">
+            <span></span>
+          </button>
+          <div class="header__logo">
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="logo of Luxurious Bridal Haven" loading="lazy">
+            </a>
+          </div>
+          <nav class="header__menu menu">
+            <ul class="header__menu-lang header__lang">
+              <li class="header__lang-item header__lang-item--active">
+                <a class="header__lang-link" href="#">en</a>/
+              </li>
+              <li class="header__lang-item">
+                <a class="header__lang-link" href="#">ua</a>
+              </li>
+            </ul>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">catalog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">collections</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">about</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">book an appointment</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__actions">
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-link" aria-label="user card">
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#user"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-link" aria-label="wishlist">
+                <svg width="24" height="22">
+                  <use xlink:href="images/sprite.svg#wishlist"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-link open-modal" aria-label="shopping bag">
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#shopping-bag"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal" aria-hidden="true">
+          <div class="modal__overlay"></div>
+          <div class="modal__content" aria-modal="true" role="dialog">
+            <div class="checkout__details__items">
+              <div class="checkout__details-itemsline">
+                <span class="checkout__details-quantity">
+                  2 items in bag
+                </span>
+                <button class="checkout__details-del close-modal" aria-label="close modal window">
+                  <svg width="40" height="40">
+                    <use xlink:href="images/sprite.svg#checkout-del"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="checkout__details-item checkout__item">
+                <picture>
+                  <source srcset="images/order-1.avif" type="image/avif">
+                  <source srcset="images/order-1.webp" type="image/webp">
+                  <img class="checkout__item-img" src="images/order-1.jpg" alt="your order picture" width="138" height="182" loading="lazy">
+                </picture>
+                <div class="checkout__item-box">
+                  <h4 class="text-title checkout__item-title">
+                      naomi
+                  </h4>
+                  <dl class="checkout__item-list">
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Size:</dt>
+                      <dd class="checkout__item-definition">s</dd>
+                    </div>
+                    <div class="checkout__item-listbox">                        <dt class="checkout__item-term">Color:</dt>
+                      <dd class="checkout__item-definition">Ivory</dd>
+                    </div>
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Item subtotal:</dt>
+                      <dd class="checkout__item-definition">€ 2,600</dd>
+                    </div>
+                  </dl>
+                  <button class="checkout__item-del" type="button" aria-label="delete order">
+                    <svg width="20" height="20">
+                      <use xlink:href="images/sprite.svg#item-del"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="checkout__details-item checkout__item">
+                <picture>
+                  <source srcset="images/order-2.avif" type="image/avif">
+                  <source srcset="images/order-2.webp" type="image/webp">
+                  <img class="checkout__item-img" src="images/order-2.jpg" alt="your order picture" width="138" height="182" loading="lazy">
+                </picture>
+                <div class="checkout__item-box">
+                  <h4 class="text-title checkout__item-title">
+                    sabine
+                  </h4>
+                  <dl class="checkout__item-list">
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Size:</dt>
+                      <dd class="checkout__item-definition">38</dd>
+                    </div>                     
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Color:</dt>
+                      <dd class="checkout__item-definition">Ivory</dd>
+                    </div>
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Item subtotal:</dt>
+                      <dd class="checkout__item-definition">€ 200</dd>
+                    </div>
+                  </dl>
+                  <button class="checkout__item-del" type="button" aria-label="delete order">
+                    <svg width="20" height="20">
+                      <use xlink:href="images/sprite.svg#item-del"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__order order">
+              <dl class="checkout__order-list order__list">
+                <div class="order__list-box">
+                  <dt class="order__list-term">Subtotal:</dt>
+                  <dd class="order__list-definition">€2, 800</dd>
+                </div>
+                <div class="order__list-box">
+                  <dt class="order__list-term">Shipping:</dt>
+                  <dd class="order__list-definition">Free</dd>
+                </div>
+                <div class="order__list-box box-total">
+                  <dt class="order__list-term">Total:</dt>
+                  <dd class="order__list-definition">€ 2,800</dd>
+                </div>
+              </dl>
+              <div class="order__links">
+                <a class="order__link-shop" href="#">keep shopping</a>
+                <a class="order__link-now" href="#">buy it now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<main class="main">
+  <div class="page-404__container">
+    <div class="page-404__inner">
+      <picture  class="page-404__inner-imgsmall">
+        <source srcset="images/page-404-1.avif" type="image/avif">
+        <source srcset="images/page-404-1.webp" type="image/webp">
+        <img src="images/page-404-1.jpg" alt="Alt text" width="200" height="249" loading="lazy">
+      </picture>
+      <div class="page-404__content">
+        <span class="page-404__title" style="display: block;">( 404 )</span>
+        <a class="page-404__link" href="#">
+          <span>
+            Return to the main page
+          </span>
+          <img class="page-404__decor" src="images/img-404-decor.svg" alt="arrow link to the main page" width="90" height="90" loading="lazy">
+        </a>
+      </div>
+      <picture  class="page-404__inner-imgbig">
+        <source srcset="images/page-404-2.avif" type="image/avif">
+        <source srcset="images/page-404-2.webp" type="image/webp">
+        <img src="images/page-404-2.jpg" alt="Alt text" width="562" height="638" loading="lazy">
+      </picture>
+    </div>
+  </div>
+  <div class="moving">
+    <div class="moving__text">
+      page not found
+      <img class="moving__decor" src="images/moving-decor.svg" alt="decor arrow" width="154" height="115" loading="lazy">
+      page not found
+      <img class="moving__decor" src="images/moving-decor.svg" alt="decor arrow" width="154" height="115" loading="lazy">
+      page not found
+      <img class="moving__decor" src="images/moving-decor.svg" alt="decor arrow" width="154" height="115" loading="lazy">
+      page not found
+      <img class="moving__decor" src="images/moving-decor.svg" alt="decor arrow" width="154" height="115" loading="lazy">
+      page not found
+      <img class="moving__decor" src="images/moving-decor.svg" alt="decor arrow" width="154" height="115" loading="lazy">
+      page not found
+      <img class="moving__decor" src="images/moving-decor.svg" alt="decor arrow" width="154" height="115" loading="lazy">
+      page not found
+      <img class="moving__decor" src="images/moving-decor.svg" alt="decor arrow" width="154" height="115" loading="lazy">
+    </div>
+  </div>
+</main>
+</div>
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

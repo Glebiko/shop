@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxurious Bridal Haven</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+<div class="promo">
+  <div class="container">
+    <p class="promo-text">
+      save 10% off when you <a href="#">sign up</a>
+    </p>
+  </div>
+</div>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__btn" type="menu" aria-label="open menu button">
+            <span></span>
+          </button>
+          <div class="header__logo">
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="logo of Luxurious Bridal Haven" loading="lazy">
+            </a>
+          </div>
+          <nav class="header__menu menu">
+            <ul class="header__menu-lang header__lang">
+              <li class="header__lang-item header__lang-item--active">
+                <a class="header__lang-link" href="#">en</a>/
+              </li>
+              <li class="header__lang-item">
+                <a class="header__lang-link" href="#">ua</a>
+              </li>
+            </ul>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">catalog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">collections</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">about</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">book an appointment</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__actions">
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-link" aria-label="user card">
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#user"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-link" aria-label="wishlist">
+                <svg width="24" height="22">
+                  <use xlink:href="images/sprite.svg#wishlist"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-link open-modal" aria-label="shopping bag">
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#shopping-bag"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal" aria-hidden="true">
+          <div class="modal__overlay"></div>
+          <div class="modal__content" aria-modal="true" role="dialog">
+            <div class="checkout__details__items">
+              <div class="checkout__details-itemsline">
+                <span class="checkout__details-quantity">
+                  2 items in bag
+                </span>
+                <button class="checkout__details-del close-modal" aria-label="close modal window">
+                  <svg width="40" height="40">
+                    <use xlink:href="images/sprite.svg#checkout-del"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="checkout__details-item checkout__item">
+                <picture>
+                  <source srcset="images/order-1.avif" type="image/avif">
+                  <source srcset="images/order-1.webp" type="image/webp">
+                  <img class="checkout__item-img" src="images/order-1.jpg" alt="your order picture" width="138" height="182" loading="lazy">
+                </picture>
+                <div class="checkout__item-box">
+                  <h4 class="text-title checkout__item-title">
+                      naomi
+                  </h4>
+                  <dl class="checkout__item-list">
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Size:</dt>
+                      <dd class="checkout__item-definition">s</dd>
+                    </div>
+                    <div class="checkout__item-listbox">                        <dt class="checkout__item-term">Color:</dt>
+                      <dd class="checkout__item-definition">Ivory</dd>
+                    </div>
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Item subtotal:</dt>
+                      <dd class="checkout__item-definition">€ 2,600</dd>
+                    </div>
+                  </dl>
+                  <button class="checkout__item-del" type="button" aria-label="delete order">
+                    <svg width="20" height="20">
+                      <use xlink:href="images/sprite.svg#item-del"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="checkout__details-item checkout__item">
+                <picture>
+                  <source srcset="images/order-2.avif" type="image/avif">
+                  <source srcset="images/order-2.webp" type="image/webp">
+                  <img class="checkout__item-img" src="images/order-2.jpg" alt="your order picture" width="138" height="182" loading="lazy">
+                </picture>
+                <div class="checkout__item-box">
+                  <h4 class="text-title checkout__item-title">
+                    sabine
+                  </h4>
+                  <dl class="checkout__item-list">
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Size:</dt>
+                      <dd class="checkout__item-definition">38</dd>
+                    </div>                     
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Color:</dt>
+                      <dd class="checkout__item-definition">Ivory</dd>
+                    </div>
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Item subtotal:</dt>
+                      <dd class="checkout__item-definition">€ 200</dd>
+                    </div>
+                  </dl>
+                  <button class="checkout__item-del" type="button" aria-label="delete order">
+                    <svg width="20" height="20">
+                      <use xlink:href="images/sprite.svg#item-del"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__order order">
+              <dl class="checkout__order-list order__list">
+                <div class="order__list-box">
+                  <dt class="order__list-term">Subtotal:</dt>
+                  <dd class="order__list-definition">€2, 800</dd>
+                </div>
+                <div class="order__list-box">
+                  <dt class="order__list-term">Shipping:</dt>
+                  <dd class="order__list-definition">Free</dd>
+                </div>
+                <div class="order__list-box box-total">
+                  <dt class="order__list-term">Total:</dt>
+                  <dd class="order__list-definition">€ 2,800</dd>
+                </div>
+              </dl>
+              <div class="order__links">
+                <a class="order__link-shop" href="#">keep shopping</a>
+                <a class="order__link-now" href="#">buy it now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<main class="main">
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Collection</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <section class="product">
+    <div class="container">
+      <div class="product__inner">
+        <div class="product__images-slider slider-mobile">
+          <div class="product__images swiper-wrapper">
+            <picture class="product-slide swiper-slide">
+              <source srcset="images/product-1.avif" type="image/avif">
+              <source srcset="images/product-1.webp" type="image/webp">
+              <img src="images/product-1.jpg" alt="Alt text" loading="lazy">
+            </picture>
+            <picture class="product-slide swiper-slide">
+              <source srcset="images/product-2.avif" type="image/avif">
+              <source srcset="images/product-2.webp" type="image/webp">
+              <img src="images/product-2.jpg" alt="Alt text" loading="lazy">
+            </picture>
+            <picture class="product-slide swiper-slide">
+              <source srcset="images/product-3.avif" type="image/avif">
+              <source srcset="images/product-3.webp" type="image/webp">
+              <img src="images/product-3.jpg" alt="Alt text" loading="lazy">
+            </picture>
+          </div>
+
+          <div class="product__arrow product__arrow-prev">
+            <svg width="10" height="18">
+              <use xlink:href="images/sprite.svg#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="product__arrow product__arrow-next">
+            <svg width="10" height="18">
+              <use xlink:href="images/sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
+
+        </div>
+        <div class="product__content">
+          <h2 class="title product__title">naomi</h2>
+          <span class="product__price">€ 2,600</span>
+          <dl class="product__content-list">
+            <dt class="product__content-term">collection</dt>
+            <dd class="product__content-difinition">iconic collection</dd>
+            <dt class="product__content-term">color</dt>
+            <dd class="product__content-difinition product__content-radio">
+              <label class="radio-label" for="white-color">
+                <input class="radio-box" id="white-color" type="radio" name="color">
+                <span class="radio-style"></span>
+                white
+              </label>
+              <label class="radio-label" for="ivory-color">
+                <input class="radio-box" id="ivory-color" type="radio" name="color">
+                <span class="radio-style"></span>
+                ivory
+              </label>
+            </dd>
+            <dd class="product__content-text">
+              The dress has a principled satin corset that harks back to ancient times when beauty was defined by
+              luxurious fabrics and exquisite tailoring.
+            </dd>
+            <dd class="product__content-text">
+              Naomi catches the eye with its intricate embroidered lace, adding a unique charm and sparkle to the dress.
+              Its light and airy skirt is made of the finest materials, creating an effect of lightness and grace with
+              every movement of the bride.
+              The "Naomi" dress will perfectly accentuate the figure and adorn the bride's look on her special day.
+            </dd>
+            <dt class="product__content-term">size</dt>
+            <dd class="product__content-difinition product__content-checkbox">
+              <label class="checkbox-label" for="product-size-xs">
+                <input class="check-box" id="product-size-xs" name="product-size-xs" type="checkbox">
+                <span class="check-style"></span>
+                xs
+              </label>
+              <label class="checkbox-label" for="product-size-s">
+                <input class="check-box" id="product-size-s" name="product-size-s" type="checkbox">
+                <span class="check-style"></span>
+                s
+              </label>
+              <label class="checkbox-label" for="product-size-m">
+                <input class="check-box" id="product-size-m" name="product-size-m" type="checkbox">
+                <span class="check-style"></span>
+                m
+              </label>
+              <label class="checkbox-label" for="product-size-l">
+                <input class="check-box" id="product-size-l" name="product-size-l" type="checkbox">
+                <span class="check-style"></span>
+                l
+              </label>
+              <label class="checkbox-label" for="product-size-xl">
+                <input class="check-box" id="product-size-xl" name="product-size-xl" type="checkbox">
+                <span class="check-style"></span>
+                xl
+              </label>
+              <label class="checkbox-label" for="product-size-xxl">
+                <input class="check-box" id="product-size-xxl" name="product-size-xxl" type="checkbox">
+                <span class="check-style"></span>
+                xxl
+              </label>
+            </dd>
+          </dl>
+          <div class="product__buttons">
+            <button class="product__buttons-sizeguide product__btn">
+              <svg width="16" height="16">
+                <use xlink:href="images/sprite.svg#icon-size"></use>
+              </svg>
+              Size giude
+            </button>
+            <button class="product__buttons-favorites product__btn">
+              <svg width="24" height="21">
+                <use xlink:href="images/sprite.svg#heart"></use>
+              </svg>
+              Favorites
+            </button>
+            <button class="product__buttons-addtobag product__btn">
+              add to bag
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="accessories">
+    <div class="container">
+      <div class="accessories__inner">
+        <img class="accessories__decor" src="images/accessories-decor.svg" alt="background decor flower" width="241" height="619" loading="lazy">
+        <h2 class="sub-title accessories__title">
+          accessories
+        </h2>
+        <div class="accessories__slider">
+          <div class="accessories__slider-wrapper swiper-wrapper">
+            <div class="accessories__slide swiper-slide">
+              <picture>
+                <source srcset="images/slide-1.avif" type="image/avif">
+                <source srcset="images/slide-1.webp" type="image/webp">
+                <img class="accessories__slide-img" src="images/slide-1.jpg" alt="Alt text" loading="lazy" width="270"
+                  height="400">
+              </picture>
+              <span class="accessories__slide-title">Sabine</span>
+              <span class="accessories__slide-price">€ 200.00</span>
+            </div>
+            <div class="accessories__slide swiper-slide">
+              <picture>
+                <source srcset="images/slide-2.avif" type="image/avif">
+                <source srcset="images/slide-2.webp" type="image/webp">
+                <img class="accessories__slide-img" src="images/slide-2.jpg" alt="Alt text" loading="lazy" width="270"
+                  height="400">
+              </picture>
+              <span class="accessories__slide-title">Fleur veil</span>
+              <span class="accessories__slide-price">€ 490.00</span>
+            </div>
+            <div class="accessories__slide swiper-slide">
+              <picture>
+                <source srcset="images/slide-3.avif" type="image/avif">
+                <source srcset="images/slide-3.webp" type="image/webp">
+                <img class="accessories__slide-img" src="images/slide-3.jpg" alt="Alt text" loading="lazy" width="270"
+                  height="400">
+              </picture>
+              <span class="accessories__slide-title">Wedding garter</span>
+              <span class="accessories__slide-price">€ 50.00</span>
+            </div>
+            <div class="accessories__slide swiper-slide">
+              <picture>
+                <source srcset="images/slide-1.avif" type="image/avif">
+                <source srcset="images/slide-1.webp" type="image/webp">
+                <img class="accessories__slide-img" src="images/slide-1.jpg" alt="Alt text" loading="lazy" width="270"
+                  height="400">
+              </picture>
+              <span class="accessories__slide-title">Sabine</span>
+              <span class="accessories__slide-price">€ 200.00</span>
+            </div>
+            <div class="accessories__slide swiper-slide">
+              <picture>
+                <source srcset="images/slide-2.avif" type="image/avif">
+                <source srcset="images/slide-2.webp" type="image/webp">
+                <img class="accessories__slide-img" src="images/slide-2.jpg" alt="Alt text" loading="lazy" width="270"
+                  height="400">
+              </picture>
+              <span class="accessories__slide-title">Fleur veil</span>
+              <span class="accessories__slide-price">€ 490.00</span>
+            </div>
+            <div class="accessories__slide swiper-slide">
+              <picture>
+                <source srcset="images/slide-3.avif" type="image/avif">
+                <source srcset="images/slide-3.webp" type="image/webp">
+                <img class="accessories__slide-img" src="images/slide-3.jpg" alt="Alt text" loading="lazy" width="270"
+                  height="400">
+              </picture>
+              <span class="accessories__slide-title">Wedding garter</span>
+              <span class="accessories__slide-price">€ 50.00</span>
+            </div>
+          </div>
+          <div class="accessories__arrow accessories__arrow-prev">
+            <svg width="10" height="18">
+              <use xlink:href="images/sprite.svg#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="accessories__arrow accessories__arrow-next">
+            <svg width="10" height="18">
+              <use xlink:href="images/sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <h2 class="sr-only">Contacts</h2>
+    <nav class="footer__menu">
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Catalog</a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Collections</a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">About</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--logo">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo of Luxurious Bridal Haven" loading="lazy">
+          </a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Book your appointment</a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer__elements">
+      <div class="footer__element">
+        <h3 class="footer__element-title">Phones</h3>
+        <ul class="footer__element-list">
+          <li class="footer__element-item">
+            <a class="footer__element-link" href="tel:+380978367320">
+              +380 (97) 836 73 20
+            </a>
+          </li>
+          <li class="footer__element-item">
+            <a class="footer__element-link" href="tel:+380999846862">
+              +380 (99) 984 68 62
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__element">
+        <h3 class="footer__element-title">Emails</h3>
+        <ul class="footer__element-list">
+          <li class="footer__element-item">
+            <a class="footer__element-link" href="mailto:office@luxuriousbridalhaven.com">
+              office@luxuriousbridalhaven.com
+            </a>
+          </li>
+          <li class="footer__element-item">
+            <a class="footer__element-link" href="mailto:sales@luxuriousbridalhaven.com">
+              sales@luxuriousbridalhaven.com
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__element">
+        <h3 class="footer__element-title">Location</h3>
+        <address class="footer__address">
+          Ukraine, Kyiv, <br>
+          st. Arsenalna, 5
+        </address>
+      </div>
+      <div class="footer__element footer__element--social">
+        <h3 class="footer__element-title">Social</h3>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" aria-label="facebook icon" target="_blank"
+              rel="noopener noreferrer">
+              <svg width="25" height="25">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__element-item">
+            <a class="footer__social-link" href="#" aria-label="instagram icon" target="_blank"
+              rel="noopener noreferrer">
+              <svg width="25" height="25">
+                <use xlink:href="images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__element">
+        <h3 class="footer__element-title">
+          Sign-up for our newsletter
+        </h3>
+        <form class="footer__form" action="">
+          <label class="sr-only" for="footer-email">enter your email</label>
+            <input class="footer__form-input" id="footer-email" name="footer-email" type="email" placeholder="Enter your email">
+          <button class="footer__form-btn" type="submit" aria-label="submit email">
+            <svg width="15" height="11">
+              <use xlink:href="images/sprite.svg#envelop"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <span class="footer__bottom-copy">
+          © Luxurious Bridal Haven. All rights reserved.
+        </span>
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
+              Refund policy
+            </a>
+          </li>
+          <li class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
+              Terms of Service
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

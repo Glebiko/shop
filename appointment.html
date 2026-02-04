@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxurious Bridal Haven</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+<div class="promo">
+  <div class="container">
+    <p class="promo-text">
+      save 10% off when you <a href="#">sign up</a>
+    </p>
+  </div>
+</div>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__btn" type="menu" aria-label="open menu button">
+            <span></span>
+          </button>
+          <div class="header__logo">
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="logo of Luxurious Bridal Haven" loading="lazy">
+            </a>
+          </div>
+          <nav class="header__menu menu">
+            <ul class="header__menu-lang header__lang">
+              <li class="header__lang-item header__lang-item--active">
+                <a class="header__lang-link" href="#">en</a>/
+              </li>
+              <li class="header__lang-item">
+                <a class="header__lang-link" href="#">ua</a>
+              </li>
+            </ul>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">catalog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">collections</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">about</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">book an appointment</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__item-link">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__actions">
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-link" aria-label="user card">
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#user"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-link" aria-label="wishlist">
+                <svg width="24" height="22">
+                  <use xlink:href="images/sprite.svg#wishlist"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__actions-item">
+              <a href="#" class="header__actions-link open-modal" aria-label="shopping bag">
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#shopping-bag"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal" aria-hidden="true">
+          <div class="modal__overlay"></div>
+          <div class="modal__content" aria-modal="true" role="dialog">
+            <div class="checkout__details__items">
+              <div class="checkout__details-itemsline">
+                <span class="checkout__details-quantity">
+                  2 items in bag
+                </span>
+                <button class="checkout__details-del close-modal" aria-label="close modal window">
+                  <svg width="40" height="40">
+                    <use xlink:href="images/sprite.svg#checkout-del"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="checkout__details-item checkout__item">
+                <picture>
+                  <source srcset="images/order-1.avif" type="image/avif">
+                  <source srcset="images/order-1.webp" type="image/webp">
+                  <img class="checkout__item-img" src="images/order-1.jpg" alt="your order picture" width="138" height="182" loading="lazy">
+                </picture>
+                <div class="checkout__item-box">
+                  <h4 class="text-title checkout__item-title">
+                      naomi
+                  </h4>
+                  <dl class="checkout__item-list">
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Size:</dt>
+                      <dd class="checkout__item-definition">s</dd>
+                    </div>
+                    <div class="checkout__item-listbox">                        <dt class="checkout__item-term">Color:</dt>
+                      <dd class="checkout__item-definition">Ivory</dd>
+                    </div>
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Item subtotal:</dt>
+                      <dd class="checkout__item-definition">€ 2,600</dd>
+                    </div>
+                  </dl>
+                  <button class="checkout__item-del" type="button" aria-label="delete order">
+                    <svg width="20" height="20">
+                      <use xlink:href="images/sprite.svg#item-del"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="checkout__details-item checkout__item">
+                <picture>
+                  <source srcset="images/order-2.avif" type="image/avif">
+                  <source srcset="images/order-2.webp" type="image/webp">
+                  <img class="checkout__item-img" src="images/order-2.jpg" alt="your order picture" width="138" height="182" loading="lazy">
+                </picture>
+                <div class="checkout__item-box">
+                  <h4 class="text-title checkout__item-title">
+                    sabine
+                  </h4>
+                  <dl class="checkout__item-list">
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Size:</dt>
+                      <dd class="checkout__item-definition">38</dd>
+                    </div>                     
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Color:</dt>
+                      <dd class="checkout__item-definition">Ivory</dd>
+                    </div>
+                    <div class="checkout__item-listbox">
+                      <dt class="checkout__item-term">Item subtotal:</dt>
+                      <dd class="checkout__item-definition">€ 200</dd>
+                    </div>
+                  </dl>
+                  <button class="checkout__item-del" type="button" aria-label="delete order">
+                    <svg width="20" height="20">
+                      <use xlink:href="images/sprite.svg#item-del"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__order order">
+              <dl class="checkout__order-list order__list">
+                <div class="order__list-box">
+                  <dt class="order__list-term">Subtotal:</dt>
+                  <dd class="order__list-definition">€2, 800</dd>
+                </div>
+                <div class="order__list-box">
+                  <dt class="order__list-term">Shipping:</dt>
+                  <dd class="order__list-definition">Free</dd>
+                </div>
+                <div class="order__list-box box-total">
+                  <dt class="order__list-term">Total:</dt>
+                  <dd class="order__list-definition">€ 2,800</dd>
+                </div>
+              </dl>
+              <div class="order__links">
+                <a class="order__link-shop" href="#">keep shopping</a>
+                <a class="order__link-now" href="#">buy it now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="appointment">
+        <div class="container">
+          <h2 class="title appointment__title">
+            book an appointment
+          </h2>
+          <div class="appointment__box">
+            <form class="appointment__form" action="#">
+              <h3 class="sub-title appointment__form-title">
+                contact information
+              </h3>
+              <span class="appointment__form-text">
+                Fill in your contact details
+              </span>
+              <label class="sr-only" for="appointment-first-name">enter first name</label>
+              <input class="appointment__form-input" id="appointment-first-name" name="appointment-first-name" type="text" placeholder="First name">
+              <label class="sr-only" for="appointment-last-name">enter last name</label>
+              <input class="appointment__form-input" id="appointment-last-name" name="appointment-last-name" type="text" placeholder="Last name">
+              <label class="sr-only" for="appointment-email">enter your email</label>
+              <input class="appointment__form-input" id="appointment-email" name="appointment-email" type="email" placeholder="Email">
+              <label class="sr-only" for="appointment-phone">enter your phone number</label>
+              <input class="appointment__form-input" id="appointment-phone" name="appointment-phone" type="tel" placeholder="Mobile">
+              <button class="appointment__form-btn" type="button">send</button>
+            </form>
+            <picture class="appointment__imagebox">
+             <source srcset="images/appointment.avif" type="image/avif">
+             <source srcset="images/appointment.webp" type="image/webp">
+             <img class="appointment__img" src="images/appointment.jpg" alt="girl in wedding dress stay in the background vintage door" loading="lazy" width="540" height="689">
+            </picture>
+          </div>
+        </div>
+      </section>
+        
+    </main>
+<footer class="footer">
+  <div class="container">
+    <h2 class="sr-only">Contacts</h2>
+    <nav class="footer__menu">
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Catalog</a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Collections</a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">About</a>
+        </li>
+        <li class="footer__menu-item footer__menu-item--logo">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo of Luxurious Bridal Haven" loading="lazy">
+          </a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Book your appointment</a>
+        </li>
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer__elements">
+      <div class="footer__element">
+        <h3 class="footer__element-title">Phones</h3>
+        <ul class="footer__element-list">
+          <li class="footer__element-item">
+            <a class="footer__element-link" href="tel:+380978367320">
+              +380 (97) 836 73 20
+            </a>
+          </li>
+          <li class="footer__element-item">
+            <a class="footer__element-link" href="tel:+380999846862">
+              +380 (99) 984 68 62
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__element">
+        <h3 class="footer__element-title">Emails</h3>
+        <ul class="footer__element-list">
+          <li class="footer__element-item">
+            <a class="footer__element-link" href="mailto:office@luxuriousbridalhaven.com">
+              office@luxuriousbridalhaven.com
+            </a>
+          </li>
+          <li class="footer__element-item">
+            <a class="footer__element-link" href="mailto:sales@luxuriousbridalhaven.com">
+              sales@luxuriousbridalhaven.com
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__element">
+        <h3 class="footer__element-title">Location</h3>
+        <address class="footer__address">
+          Ukraine, Kyiv, <br>
+          st. Arsenalna, 5
+        </address>
+      </div>
+      <div class="footer__element footer__element--social">
+        <h3 class="footer__element-title">Social</h3>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" aria-label="facebook icon" target="_blank"
+              rel="noopener noreferrer">
+              <svg width="25" height="25">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__element-item">
+            <a class="footer__social-link" href="#" aria-label="instagram icon" target="_blank"
+              rel="noopener noreferrer">
+              <svg width="25" height="25">
+                <use xlink:href="images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__element">
+        <h3 class="footer__element-title">
+          Sign-up for our newsletter
+        </h3>
+        <form class="footer__form" action="">
+          <label class="sr-only" for="footer-email">enter your email</label>
+            <input class="footer__form-input" id="footer-email" name="footer-email" type="email" placeholder="Enter your email">
+          <button class="footer__form-btn" type="submit" aria-label="submit email">
+            <svg width="15" height="11">
+              <use xlink:href="images/sprite.svg#envelop"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <span class="footer__bottom-copy">
+          © Luxurious Bridal Haven. All rights reserved.
+        </span>
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
+              Refund policy
+            </a>
+          </li>
+          <li class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
+              Terms of Service
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
