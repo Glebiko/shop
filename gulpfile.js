@@ -119,5 +119,5 @@ exports.pages = pages;
 exports.cleanDist = cleanDist;
 exports.building = building;
 
-exports.build = series(cleanDist, styles, scripts, building);
+exports.build = series(cleanDist, pages, styles, scripts, building);
 exports.default = parallel(styles, images, sprites, scripts, pages, watching);
